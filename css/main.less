@@ -1,0 +1,145 @@
+body{
+    max-width: 1260px;
+    margin: 0 auto;
+    // рамка
+    .frame{
+        border: 12px solid rgba(0,0,0,0.2);
+    }
+    // стрелка
+    .botHeader{
+        display: flex;
+        justify-content: center;
+        margin-top:60px ;
+        a{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(209, 55, 55);
+            font-size: 35px;
+            text-decoration: none;
+            color: white;
+            border: 2px rgb(173, 91, 91) solid ;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+    // основной текст
+    .mainText{
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 40px;
+        max-width: 850px;
+        padding: 80px 0px;
+        h1{
+            text-transform: uppercase;
+            font-size: 50px;
+            color: white;
+            
+            span{
+                padding-right: 12px;
+                color: rgb(173, 91, 91);
+            }
+            
+        }
+        p{
+        font-size: 20px;
+        padding-bottom: 20px ;
+        color:rgb(238, 222, 222)
+        }
+        
+        a{
+          text-decoration: none;
+          font-size: 20px;
+          border: 2px rgb(173, 91, 91) solid ;
+          border-radius: 5px;
+          padding: 12px 28px;
+          color: rgb(173, 91, 91);
+          &:hover{
+              background-color: rgb(173, 91, 91);
+              color: white;
+          }
+        }
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background: url("../img/background.png") no-repeat center;
+        min-width: 100%;
+        max-width: 1250px; // for space-between
+        min-height: 700px; // for space-around
+        // навигационка
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            >a{
+              color: white;
+              font-size: 25px;
+              font-weight: bold;
+              text-decoration: none;
+              img{
+                padding-right: 15px;
+                vertical-align: middle;
+            }
+            }
+            menu{
+                display: flex;
+                justify-content: space-around;
+                li{
+                    list-style: none;
+                    padding-left: 15px;
+                    >a{
+                        text-decoration: none;
+                        color: rgb(245, 234, 234);
+                        font-size: 25px;
+                        &:hover{
+                            border-bottom: red solid 3px;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+    //секция 1 
+    .receive{
+        margin: 0 auto;
+        text-align: center;
+        background: white;
+        padding: 70px 50px 10px 50px;
+        h1{
+            font-size: 35px;
+            text-decoration: underline;
+            padding-top: 20px;
+        }
+        p{
+           font-size: 25px; 
+           margin: 50px 0px;
+           max-width: 1000px;
+        }
+        .icons{
+            display: flex;
+            .icon{
+                padding: 15px;  
+                h2{ 
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                }
+                p{
+                    font-size: 18px;
+                }     
+            }
+            
+        }
+    }
+
+    // секция 2
+    .expand{
+        padding: 50px;
+        background: url("../img/expand.png") no-repeat;
+        min-height: 800px ;
+    }
+}
